@@ -108,7 +108,7 @@ class PaletteLoRALinearLayer(nn.Module):
         nn.init.normal_(self.down.weight, std=1 / rank)
         nn.init.zeros_(self.up.weight)
 
-    def forward(self, hidden_states, **cross_attention_kwargs):
+    def forward(self, hidden_states,color_palette, **cross_attention_kwargs):
         orig_dtype = hidden_states.dtype
         dtype = self.down.weight.dtype
 
