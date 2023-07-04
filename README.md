@@ -1,12 +1,15 @@
 # Prism-diffusion
 
-This repository contains the implementation of the Prism method for deep learning, along with the necessary classes and dependencies. The Prism method is a novel approach for training deep learning models, and this repository provides the scripts and environment setup instructions to run the method effectively.
+![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/5130e9f2-6207-48a7-9435-e1a9530210e2)
+
+
+This repository contains the implementation of the Prism method for controling colors in diffusion generated images, using a conditional LoRA, along with the necessary classes and dependencies.This repository provides the scripts and environment setup instructions to run the method effectively.
 
 ## Repository Structure
 
 The repository is structured as follows:
 
-- `prism_training.ipynb`: This Jupyter Notebook script contains the implementation of the Prism training method. It is the main script that needs to be executed to train a deep learning model using Prism. Before running the script, certain hyperparameters and logging information need to be filled in.
+- `prism_training.ipynb`: This Jupyter Notebook script contains the implementation of the Prism training method. It is the main script that needs to be executed to train a Prism LoRA. Before running the script, certain hyperparameters and logging information need to be filled in.
 
 - `prism.yml`: This file specifies the Conda environment required to run the code in `prism_training.ipynb`. It contains a list of dependencies and their versions to ensure a consistent and reproducible environment.
 
@@ -18,7 +21,9 @@ To run the Prism training code and train a deep learning model using Prism, foll
 
 ### Environment Setup
 
-1. Make sure you have Conda installed on your system. If not, follow the instructions for your operating system to install Conda from the official website.
+0. Make sure you have Conda installed on your system. If not, follow the instructions for your operating system to install Conda from the official website.
+
+1. Fork the repository by clicking the "Fork" button on the top-right corner of this repository page. This will create a copy of the repository in your GitHub account.
 
 2. Clone this Git repository to your local machine using the following command:
    ```
@@ -61,12 +66,23 @@ To run the Prism training code and train a deep learning model using Prism, foll
    - `args.report_to`: Specify the reporting platform ("wandb" or None).
    - `path_to_weights`: Path to pre-trained weights if you want to load existing weights.
 
-3. Execute the cells in the Jupyter Notebook sequentially to run the Prism training script. The script will train the deep learning model using the Prism method based on the provided configurations.
+3. Execute the cells in the Jupyter Notebook sequentially to run the Prism training script. The script will train the model using the Prism method based on the provided configurations.
 
-4. Monitor the training progress and logging information in the Jupyter Notebook output. The training script will log the necessary information according to the specified configurations.
+4. Monitor the training progress and logging information in WandB. The training script will log the necessary information according to the specified configurations.
 
-## Contributing
+## machine
 
-If you wish to contribute to this project, you can follow
+in order to run this method, using a GPU with at least 20 GB RAM is a must
+
+## based on
+
+the original code this script is based on is from diffusers
+# Prism diffusion
+
+## acknowledgements
+
+this notebook code is based on the following code from the huggingface diffusers code:
+https://github.com/huggingface/diffusers/blob/main/examples/text_to_image/train_text_to_image_lora.py
+with changes relavent to our specific method and architecture, CoLoRA.
 
 .
