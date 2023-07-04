@@ -3,7 +3,17 @@
 ![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/5130e9f2-6207-48a7-9435-e1a9530210e2)
 
 
+
 This repository contains the implementation of the Prism method for controling colors in diffusion generated images, using a conditional LoRA, along with the necessary classes and dependencies.This repository provides the scripts and environment setup instructions to run the method effectively.
+
+
+
+| Red palette | Blue palette |
+|-------------|---------|
+|![prompt_a beautiful image of a colorful , vibrant flower_seed_1337red](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/326d09fb-8c98-4ea1-b601-1f2c4f9144b3)|![prompt_a beautiful image of a colorful , vibrant flower_seed_1337blue](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/052862e2-4ad6-4e8a-ba36-75db807e8577) |
+|![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/40926b08-c19e-499c-8b98-1944974b12d8)| ![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/cf48f584-dd8d-4f52-943c-7a93fe0727ab)|
+|![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/f2105f98-bcd1-4bb1-af7a-f29f60a0b341)| ![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/3a6a8146-7979-4bff-895b-e4b79856530d)|
+
 
 ## Repository Structure
 
@@ -76,13 +86,11 @@ in order to run this method, using a GPU with at least 20 GB RAM is a must
 
 ## based on
 
-the original code this script is based on is from diffusers
-# Prism diffusion
-
-## acknowledgements
-
 this notebook code is based on the following code from the huggingface diffusers code:
 https://github.com/huggingface/diffusers/blob/main/examples/text_to_image/train_text_to_image_lora.py
 with changes relavent to our specific method and architecture, CoLoRA.
 
+## contact info
+
+for any questions regarding the project, you can contact me at ronraphaeli at technion.ac.il
 .
