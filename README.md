@@ -15,6 +15,15 @@ below are some examples of generations using the same prompt and seed, but with 
 |![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/40926b08-c19e-499c-8b98-1944974b12d8)| ![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/cf48f584-dd8d-4f52-943c-7a93fe0727ab)|
 |![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/f2105f98-bcd1-4bb1-af7a-f29f60a0b341)| ![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/3a6a8146-7979-4bff-895b-e4b79856530d)|
 
+## CoLoRA architecture and training method
+
+### the CoLoRa layers are created mid run, using the trained pre-weights
+
+![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/b0cfc520-4744-4d65-9c1b-7627539146b3)
+
+### the training method, is as follows
+
+![image](https://github.com/ronraphaeli/Prism-diffusion/assets/102682845/7ce6f723-3c3c-45a8-9849-50a069fe1d02)
 
 ## Repository Structure
 
